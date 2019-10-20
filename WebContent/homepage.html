@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>User Login </title>
+<script type="text/javascript">
+
+function checkform()
+{ 
+if (document.login.Login$UserName.value =='') {
+// something is wrong
+alert('Please Enter userId');
+document.login.Login$UserName.focus();
+return false;
+}
+else if (document.login.Login$Password.value =='')
+{
+// something else is wrong
+alert('Please Enter Password');
+document.login.Login$Password.focus();
+return false;
+}
+
+return true;
+}
+</script> 
+</head>
+<body>
+
+<form name="login" action="Login" method="post" onSubmit="return checkform(this)">
+<img src="C:\Users\Devil\Documents\Eclipse\VoterId\Images\vote.jpg" width="1350" height="200" >
+   <table cellspacing="0" cellpadding="4" border="0"  style="color:#0000FF;border-collapse:collapse;" width="1260" align="right">
+<tr style="color:White;background-color:#003399;font-weight:bold;">
+<th scope="col" align="left"><a href = "http://localhost:8080/VoterId/website.html"><font color="white">Home</font></a></th>
+
+</tr>
+</table>
+
+<div align="center" style="vertical-align:bottom">
+<br>
+<br>
+<br>
+<br>
+<table border="0" cellpadding="1" cellspacing="0" style="border-collapse: collapse">
+<tr>
+	<td align="center" rowspan="6" style="padding:15px; font-weight: bold; color: white; background-color: #6b696b"> Log In </td>
+	<td style="width:8px;">&nbsp;</td>
+	<td align="right">
+	<label for="ctl00_ContentPlaceHolder1_Login1_UserName" id="ctl00_ContentPlaceHolder1_Login1_UserNameLabel" style="font-weight:bold;">User Name:</label></td>
+	<td><input name="Login$UserName" type="text" id="Login_UserName" tabindex="1" /></td>
+	<td align="center"style="width:8px;" style="padding:15px;">
+	<input type="submit" name="$Login$LoginButton" value="Log In"  id="Login_LoginButton" tabindex="4" /></td>
+</tr>
+<tr>
+	<td style="width:8px;">&nbsp;</td>
+	<td align="right">
+	<label for="Login_Password" id="Login_PasswordLabel" style="font-weight:bold;">Password:</label></td>
+	<td><input name="Login$Password" type="password" id="Login_Password" tabindex="2" /></td>
+</tr>                        
+<tr>
+	<td style="width:8px;">&nbsp;</td>
+	<td colspan="3" align="right">
+	<a href="http://localhost:8080/VoterId/registration.html">New User? Sign Up</a></td>
+</tr>
+<tr>
+	<td style="width:8px;">&nbsp;</td>
+	<td colspan="3" align="right">
+	<a href = "http://localhost:8080/VoterId/username.html">Forgot Password!</a></td>
+</tr>
+</table>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>New User Registration</title>
+</head>
+<body>
+<form name="Newlogin" action="NewUser" method="post" onSubmit="return checkform(this)">
+<img src="C:\Users\Devil\Documents\Eclipse\VoterId\Images\vote.jpg" width="1350" height="200" >
+<table cellspacing="0" cellpadding="4" border="0"  style="color:#FFFFFF;border-collapse:collapse;" width="1260" align="right">
+<tr style="color:White;  background-color:#003399;font-weight:bold;">
+<th scope="col" align="right"><a href = "http://localhost:8080/VoterId/website.html"><font color="white">Home</font></a></th>
+</tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<table cellpadding="3" border="0">
+<tr>
+<td colspan="3" align="right">
+<marquee><span id="ctl00_ContentPlaceHolder1_LabelMandatory" style="color:Red;">* This indicates fields which are mandatory.</span></marquee></td></tr>
+<tr>
+<td colspan="3" align="center">
+<h2>New User Registration</h2></td></tr>
+<tr>
+<td colspan="3">
+<h1>Personal Details</h1></td></tr>
+<tr>
+<td colspan="3">
+<span id="ctl00_ContentPlaceHolder1_Msg" style="color:Red;font-weight:bold;"></span></td></tr>
+<tr>
+<td>Name:<span id="ctl00_ContentPlaceHolder1_LblAst" style="color:Red;">*</span></td>
+<td><input name="$newusername" type="text" maxlength="50" id="$_newusername" /></td>
+<td><span id="ctl00_ContentPlaceHolder1_NameRequiredFieldValidator" style="color:Red;visibility:hidden;">*</span></td></tr>
+<tr>
+      <td>Address:<span id="ctl00_ContentPlaceHolder1_LblAst1" style="color:Red;">*</span></td>
+      <td><input name="Address$Textbox" type="text" maxlength="255" id="Address_Textbox" /></td>
+      <td><span id="ctl00_ContentPlaceHolder1_AddresssRequiredFieldValidator" style="color:Red;visibility:hidden;">*</span></td>
+    </tr>
+    <tr>
+      <td>City:<span id="ctl00_ContentPlaceHolder1_LblAst2" style="color:Red;">*</span></td>
+      <td><input name="City$Textbox" type="text" maxlength="50" id="City_Textbox" /></td>
+      <td><span id="ctl00_ContentPlaceHolder1_CityRequiredFieldValidator" style="color:Red;visibility:hidden;">*</span></td>
+          
+    </tr>
+    <tr>
+      <td>State:<span id="ctl00_ContentPlaceHolder1_LblAst3" style="color:Red;">*</span></td>
+      <td><input name="State$Textbox" type="text" maxlength="50" id="State_Textbox" /></td>
+      <td><span id="ctl00_ContentPlaceHolder1_StateRequiredFieldValidator" style="color:Red;visibility:hidden;">*</span></td>
+          
+    </tr>
+    <tr>
+      <td>Pincode:<span id="ctl00_ContentPlaceHolder1_LblAst4" style="color:Red;">*</span></td>
+      <td><input name="Pincode$Textbox" type="text" maxlength="6" id="Pincode_Textbox" /></td>
+      <td><span id="ctl00_ContentPlaceHolder1_PincodeRequiredFieldValidator" style="color:Red;visibility:hidden;">*</span></td>
+          
+    </tr>
+    <tr>
+      <td>Mobile No:<span id="ctl00_ContentPlaceHolder1_LblAst5" style="color:Red;">*</span></td>
+      <td><input name="MobileNo$Textbox" type="text" maxlength="10" id="MobileNo_Textbox" /></td>
+      <td><span id="ctl00_ContentPlaceHolder1_MobileNoRequiredFieldValidator" style="color:Red;visibility:hidden;">*</span></td>
+          
+    </tr>    
+    <tr>
+      <td>Landline No:</td>
+      <td><input name="LandlineNo$Textbox" type="text" maxlength="25" id="LandlineNo_Textbox" /></td>
+      <td> &nbsp;
+      </td>
+          
+    </tr>
+    <tr>
+      <td>Occupation:<span id="ctl00_ContentPlaceHolder1_LblAst6" style="color:Red;">*</span></td>
+      <td><input name="Occupation$Textbox" type="text" maxlength="50" id="Occupation_Textbox" /></td>
+      <td><span id="ctl00_ContentPlaceHolder1_OccupationRequiredFieldValidator" style="color:Red;visibility:hidden;">*</span></td>
+          
+    </tr>
+     <tr>
+        <td colspan="3">
+            <h1>User Account Details</h1>
+        </td>        
+    </tr>
+    <tr>
+      <td>User Name:<span id="ctl00_ContentPlaceHolder1_LblAst7" style="color:Red;">*</span></td>
+      <td><input name="Username$Textbox" type="text" maxlength="20" id="Username_Textbox" /></td>
+      <td><span id="ctl00_ContentPlaceHolder1_UsernameRequiredValidator" style="color:Red;visibility:hidden;">*</span></td>
+          
+    </tr>
+    <tr>
+        <td colspan="3" style="color: #FF0000">
+            (Please note that the Password must be a minimum of eight characters in length 
+            and must not be the same as the user name.)
+        </td>
+    </tr>
+    <tr>
+      <td>Password:<span id="ctl00_ContentPlaceHolder1_LblAst8" style="color:Red;">*</span></td>
+      <td><input name="Password$Textbox" type="password" maxlength="20" id="Password_Textbox" /></td>
+      <td><span id="ctl00_ContentPlaceHolder1_PasswordRequiredValidator" style="color:Red;visibility:hidden;">*</span></td>
+    </tr>
+    <tr>
+      <td>Confirm Password:<span id="ctl00_ContentPlaceHolder1_LblAst9" style="color:Red;">*</span></td>
+      <td><input name="PasswordConfirm$Textbox" type="password" maxlength="20" id="Password_ConfirmTextbox" /></td>
+      <td><span id="ctl00_ContentPlaceHolder1_PasswordConfirmRequiredValidator" style="color:Red;visibility:hidden;">*</span>
+          <span id="ctl00_ContentPlaceHolder1_PasswordConfirmCompareValidator" style="color:Red;visibility:hidden;">Confirm password must match password.</span>
+      </td>
+    </tr>
+    <tr>
+        <td>Email:<span id="ctl00_ContentPlaceHolder1_LblAst10" style="color:Red;">*</span></td>
+        <td><input name="Email$Textbox" type="text" maxlength="50" id="Email_Textbox" /></td>
+        <td><span id="ctl00_ContentPlaceHolder1_EmailRequiredFieldValidator" style="color:Red;visibility:hidden;">*</span>
+            <span id="ctl00_ContentPlaceHolder1_EmailRegularExpressionValidator" style="color:Red;visibility:hidden;">Invalid Email Address.</span>                
+        </td>
+    </tr>
+    <tr>
+      <td>Secret Question:<span id="ctl00_ContentPlaceHolder1_LblAst11" style="color:Red;">*</span></td>
+      <td>
+          <select name="DropDownList$SecretQuestion" id="DropDownList_SecretQuestion">
+	<option value="Choose Question ...">Choose Question ...</option>
+	<option value="Where did you meet your Spouse?">Where did you meet your Spouse?</option>
+	<option value="What is your favorite passtime?">What is your favorite passtime?</option>
+	<option value="Who was your childhood hero?">Who was your childhood hero?</option>
+	<option value="What is your pet name?">What is your pet name?</option>
+
+</select>
+        </td>
+      <td><span id="ctl00_ContentPlaceHolder1_PasswordQuestionRequiredValidator" style="color:Red;visibility:hidden;">*</span>
+        </td>
+    </tr>
+    <tr>
+      <td>Hint Answer:<span id="ctl00_ContentPlaceHolder1_LblAst12" style="color:Red;">*</span></td>
+      <td><input name="PasswordAnswer$Textbox" type="text" maxlength="20" id="PasswordAnswer_Textbox" /></td>
+      <td><span id="ctl00_ContentPlaceHolder1_PasswordAnswerRequiredValidator" style="color:Red;visibility:hidden;">*</span>
+        </td>
+          
+    </tr>
+     
+    <tr>
+        
+        <td align="center"><input type="submit" name="ctl00$ContentPlaceHolder1$CreateUserButton" value="Create User" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$CreateUserButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ContentPlaceHolder1_CreateUserButton" /></td>
+        <td><input type="reset" name="reset" value="Reset"></input></td>
+    </tr>    
+  </table>
+  </form>
+</body>
+</html>

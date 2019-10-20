@@ -1,0 +1,746 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Online Voter Registration Form</title>
+</head>
+<body>
+<form name="Voter" action="VoterRegistration" method="post" onSubmit="return checkform(this)">
+<img src="C:\Users\Devil\Documents\Eclipse\VoterId\Images\vote.jpg" width="1350" height="200" >
+<table cellspacing="0" cellpadding="4" border="0"  style="color:#0000FF;border-collapse:collapse;" width="1260" align="right">
+<tr style="color:White;background-color:#003399;font-weight:bold;">
+<th scope="col" align="left"><a href = "http://localhost:8080/VoterId/website.html"><font color="white">Home</font></a></th>
+<th scope="col" align="right"><a href = "http://localhost:8080/VoterId/homepage.html"><font color="white">Logout</font></a></th>
+</tr>
+
+</table>
+<br>
+<br>
+<br>
+<br>
+<div align="center"><b> Elections Department<br>
+Application for Enrollment as a New Voter</b></div>
+<p id="P1" align="center" class="style13"><b>FORM 6</b><br />[See rules 13(1) and 26]</p>
+<marquee><span id="lblMsg" style="color:Red;" style="font-weight: 700" >Application for inclusion of name in Electoral Roll (* -- indicates compulsory)</span> </marquee>
+ To,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The Electoral Registration Officer,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Assembly Constituency <select name="ddlDist" onchange="javascript:setTimeout('__doPostBack(\'ddlDist\',\'\')', 0)" id="ddlDist" tabindex="1">
+		<option value="1">1 - NERELA</option>
+		<option value="2">2 - BURARI</option>
+		<option value="3">3 - TIMARPUR</option>
+		<option value="4">4 - ADARSH NAGAR</option>
+		<option value="5">5 - BADLI</option>
+		<option value="6">6 - RITHALA</option>
+		<option value="7">7 - BAWANA</option>
+		<option value="8">8 - MUNDKA</option>
+		<option value="9">9 - KIRARI</option>
+		<option value="10">10 - SULTANPUR MAJRA</option>
+		<option value="11">11 - NANGLOI JAT</option>
+		<option value="12">12 - MANGOL PURI</option>
+		<option value="13">13 - ROHINI</option>
+		<option value="14">14 - SHALIMAR BAGH</option>
+		<option value="15">15 - SHAKUR BASTI</option>
+		<option value="16">16 - TRI NAGAR</option>
+		<option value="17">17 - WAZIRPUR</option>
+		<option value="18">18 - MODEL TOWN</option>
+		<option value="19">19 - SADAR BAZAR</option>
+		<option value="20">20 - CHANDNI CHOWK</option>
+		<option value="21">21 - MATIA MAHAL</option>
+		<option value="22">22 - BALLIMARAN</option>
+		<option value="23">23 - KAROL BAGH</option>
+		<option value="24">24 - PATEL NAGAR</option>
+		<option value="25">25 - MOTI NAGAR</option>
+		<option value="26">26 - MADIPUR</option>
+		<option value="27">27 - RAJOURI GARDEN</option>
+		<option value="28">28 - HARI NAGAR</option>
+		<option value="29">29 - TILAK NAGAR</option>
+		<option value="30">30 - JANAKPURI</option>
+		<option value="31">31 - VIKASPURI</option>
+		<option value="32">32 - UTTAM NAGAR</option>
+		<option value="33">33 - DWARKA</option>
+		<option value="33">34 - MATIALA</option>
+		<option value="35">35 - NAJAFGARH</option>
+		<option value="36">36 - BIJWASAN</option>
+		<option value="37">37 - PALAM</option>
+		<option value="38">38 - DELHI CANTT</option>
+		<option value="39">39 - RAJINDER NAGAR</option>
+		<option value="40">40 - NEW DELHI</option>
+		<option value="41">41 - JANGPURA</option>
+		<option value="42">42 - KASTURBA NAGAR</option>
+		<option value="43">43 - MALVIYA NAGAR</option>
+		<option value="44">44 - R K PURAM</option>
+		<option value="45">45 - MEHRAULI</option>
+		<option value="46">46 - CHHATARPURL</option>
+		<option value="47">47 - DEOLI</option>
+		<option value="48">48 - AMBEDKAR NAGAR</option>
+		<option value="49">49 - SANGAM VIHAR</option>
+		<option value="50">50 - GREATER KAILASH</option>
+		<option value="51">51 - KALKAJI</option>
+		<option value="52">52 - TUGHLAKABAD</option>
+		<option value="53">53 - BADARPUR</option>
+		<option value="54">54 - OKHLA</option>
+		<option value="55">55 - TRILOKPURI</option>
+		<option value="56">56 - KONDLI</option>
+		<option value="57">57 - PATPARGANJ</option>
+		<option value="58">58 - LAXMI NAGAR</option>
+		<option value="59">59 - VISHWAS NAGAR</option>
+		<option value="60">60 - KRISHNA NAGAR</option>
+		<option value="61">61 - GANDHI NAGAR</option>
+		<option value="62">62 - SHAHDARA</option>
+		<option value="63">63 - SEEMA PURI</option>
+		<option value="64">64 - ROHTAS NAGAR</option>
+		<option value="65">65 - SEELAMPUR</option>
+		<option value="66">66 - GHONDA</option>
+		<option value="67">67 - BABARPUR</option>
+		<option value="68">68 - GOKALPUR</option>
+		<option value="69">69 - MUSTAFABAD</option>
+		<option value="70">70 - KARAWAL NAGAR</option>
+		<option selected="selected" value="0">Choose District</option></select>      
+<div id="Panel3">
+<table width="100%" border="1" align="left" cellpadding="5" cellspacing="0" bordercolor="#0000FF" id="table1">
+
+<tr>
+<th colspan="2" scope="row" class="style25">
+<div align="left">
+<span class="style2">I. Applicants Details</span>
+</div>
+</th>
+</tr>
+<tr>
+<th width="44%" scope="row">
+<div align="left" class="style2">
+Name<span class="style8" style="color: red">*</span></div></th>
+<td class="style16">
+<input name="txt_votername" type="text" maxlength="50" id="txt_votername" tabindex="3" size="50" />
+<span id="RequiredFieldValidator1" style="color:Red;visibility:hidden;">*</span></tr>
+<tr>
+<th scope="row">
+<div align="left" class="style2">
+Sur Name(if any)</div>
+</th>
+<td class="style16"><input name="txt_votersurname" type="text" maxlength="50" id="txt_votersurname" tabindex="5" size="50" />
+<tr>
+<th scope="row">
+<div align="left" class="style2">
+Age as on 1st January 2014<span class="style8" style="color: red">*</span></div>
+</th>
+<td class="style16">
+<table>
+<tr>
+<td>
+<span class="style2">Years</span>
+<select name="dd_ageyear" id="dd_ageyear" tabindex="7">
+		<option value="0">Select Years</option>
+		<option value="18">18</option>
+		<option value="19">19</option>
+		<option value="20">20</option>
+		<option value="21">21</option>
+		<option value="22">22</option>
+		<option value="23">23</option>
+		<option value="24">24</option>
+		<option value="25">25</option>
+		<option value="26">26</option>
+		<option value="27">27</option>
+		<option value="28">28</option>
+		<option value="29">29</option>
+		<option value="30">30</option>
+		<option value="31">31</option>
+		<option value="32">32</option>
+		<option value="33">33</option>
+		<option value="34">34</option>
+		<option value="35">35</option>
+		<option value="36">36</option>
+		<option value="37">37</option>
+		<option value="38">38</option>
+		<option value="39">39</option>
+		<option value="40">40</option>
+		<option value="41">41</option>
+		<option value="42">42</option>
+		<option value="43">43</option>
+		<option value="44">44</option>
+		<option value="45">45</option>
+		<option value="46">46</option>
+		<option value="47">47</option>
+		<option value="48">48</option>
+		<option value="49">49</option>
+		<option value="50">50</option>
+		<option value="51">51</option>
+		<option value="52">52</option>
+		<option value="53">53</option>
+		<option value="54">54</option>
+		<option value="55">55</option>
+		<option value="56">56</option>
+		<option value="57">57</option>
+		<option value="58">58</option>
+		<option value="59">59</option>
+		<option value="60">60</option>
+		<option value="61">61</option>
+		<option value="62">62</option>
+		<option value="63">63</option>
+		<option value="64">64</option>
+		<option value="65">65</option>
+		<option value="66">66</option>
+		<option value="67">67</option>
+		<option value="68">68</option>
+		<option value="69">69</option>
+		<option value="70">70</option>
+		<option value="71">71</option>
+		<option value="72">72</option>
+		<option value="73">73</option>
+		<option value="74">74</option>
+		<option value="75">75</option>
+		<option value="76">76</option>
+		<option value="77">77</option>
+		<option value="78">78</option>
+		<option value="79">79</option>
+		<option value="80">80</option>
+		<option value="81">81</option>
+		<option value="82">82</option>
+		<option value="83">83</option>
+		<option value="84">84</option>
+		<option value="85">85</option>
+		<option value="86">86</option>
+		<option value="87">87</option>
+		<option value="88">88</option>
+		<option value="89">89</option>
+		<option value="90">90</option>
+		<option value="91">91</option>
+		<option value="92">92</option>
+		<option value="93">93</option>
+		<option value="94">94</option>
+		<option value="95">95</option>
+		<option value="96">96</option>
+		<option value="97">97</option>
+		<option value="98">98</option>
+		<option value="99">99</option>
+		<option value="100">100</option>
+		<option value="101">101</option>
+		<option value="102">102</option>
+		<option value="103">103</option>
+		<option value="104">104</option>
+		<option value="105">105</option>
+		<option value="106">106</option>
+		<option value="107">107</option>
+		<option value="108">108</option>
+		<option value="109">109</option>
+		<option value="110">110</option>
+		<option value="111">111</option>
+		<option value="112">112</option>
+		<option value="113">113</option>
+		<option value="114">114</option>
+		<option value="115">115</option>
+		<option value="116">116</option>
+		<option value="117">117</option>
+		<option value="118">118</option>
+		<option value="119">119</option>
+		<option value="120">120</option>
+		<option value="121">121</option>
+		<option value="122">122</option>
+		<option value="123">123</option>
+		<option value="124">124</option>
+		<option value="125">125</option>
+
+	</select> 
+<span id="RequiredFieldValidator22" style="color:Red;display:none;">*</span>
+</td>
+<td>
+<span class="style2">Months</span>
+<select name="dd_agemonth" id="dd_agemonth" tabindex="8">
+		<option selected="selected" value="0">Select Month</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+
+	</select>
+<span id="RequiredFieldValidator11" style="color:Red;display:none;">*</span>
+
+</td></tr>
+</table>
+</tr>
+
+<tr>
+<th scope="row">
+<div align="left" class="style2">
+Sex<span class="style8" style="color: red" >*</span></div>
+</th>
+<td class="style16">
+<p class="style3">
+<select name="dd_Sex" id="dd_Sex" tabindex="9" class="txOthers">
+		<option value="0">Select Sex</option>
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+		<option value="Others">Others</option>
+
+	</select>
+<b><span id="RequiredFieldValidator27" style="color:Red;visibility:hidden;">*</span>
+</b><br>
+</p>
+</td> </tr>
+<tr><th scope="row" class="style1">
+<div align="left" class="style2">
+<b>Date of Birth(dd/mm/yyyy):</b><span class="style8" style="color: red">*</span></div></th><td class="style16"><input name="TxtDOB" type="text" id="TxtDOB" value=" "  style="width:200px;"/>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<div align="left" class="style2">
+<b>Place of Birth </b><span class="style8" style="color: red">*</span></div>
+</th>
+<td class="style16">
+<table>
+<tr>
+<td class="style2">
+Village/Town &nbsp;&nbsp; </td>
+<td class="style2">:&nbsp;<input name="txt_townbirth" type="text" maxlength="25" id="txt_townbirth" tabindex="13" size="25" style="width:195px;" />
+</td>
+</tr>
+<tr>
+<td class="style2">
+District&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<td class="style2">
+<b>:&nbsp;<input name="dist_text" type="text" id="txt_dist" tabindex="14" size="25" style="width:195px;" />
+</b></td>
+</tr>
+<tr>
+<td class="style2"> State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class="style2"><b>:&nbsp;<select name="dd_birthstate" id="dd_birthstate" tabindex="15" name="oldstate">
+		<option value="Select State">Select State</option>
+		<option value="Andhra Pradesh">Andhra Pradesh</option>
+		<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+		<option value="Assam">Assam</option>
+		<option value="Bihar">Bihar</option>
+		<option value="Goa">Goa</option>
+		<option value="Gujarat">Gujarat</option>
+		<option value="Haryana">Haryana</option>
+		<option value="Himachal Pradesh">Himachal Pradesh</option>
+		<option value="Jammu Kashmir">Jammu Kashmir</option>
+		<option value="Karnataka">Karnataka</option>
+		<option value="kerala">kerala</option>
+		<option value="Madhya Pradesh">Madhya Pradesh</option>
+		<option value="Maharashtra">Maharashtra</option>
+		<option value="Manipur">Manipur</option>
+		<option value="Meghalaya">Meghalaya</option>
+		<option value="Mizoram">Mizoram</option>
+		<option value="Nagaland">Nagaland</option>
+		<option value="Orissa">Orissa</option>
+		<option value="Punjab">Punjab</option>
+		<option value="Rajasthan">Rajasthan</option>
+		<option value="Sikkim">Sikkim</option>
+		<option value="Tamil Nadu">Tamil Nadu</option>
+		<option value="Tripura">Tripura</option>
+		<option value="Uttar Pradesh">Uttar Pradesh</option>
+		<option value="West Bengal">West Bengal</option>
+		<option value="Chhattisgarh">Chhattisgarh</option>
+		<option value="Jharkhand">Jharkhand</option>
+		<option value="Uttarakhand">Uttarakhand</option>
+		<option value="Andaman and Nicobar Island">Andaman and Nicobar Island</option>
+		<option value="Chandigarh">Chandigarh</option>
+		<option value="Dadra Nagar Haveli">Dadra Nagar Haveli</option>
+		<option value="Daman Diu">Daman Diu</option>
+		<option value="NCT of Delhi">NCT of Delhi</option>
+		<option value="Lakshadweep">Lakshadweep</option>
+		<option value="Pondicherry">Pondicherry</option>
+
+	</select></b>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+<tr>
+<th scope="row">
+ <div align="left" class="style2">Father&#39;s /Mother&#39;s/Husband&#39;s Name <span class="style8" style="color: red">*</span></div>
+</th>
+<td class="style15">
+<table width="200"><tr>
+<th scope="row">
+<div align="left" class="style3">
+Name &nbsp;<input name="txt_relationsfirstname" type="text" maxlength="30" id="txt_relationsfirstname" tabindex="19" size="45" /></div>
+</th>
+<td class="style3">&nbsp;</td></tr>
+<tr>
+<th class="style3" scope="row">
+<div align="left"> Surname <input name="txt_relationssurname" type="text" maxlength="30" id="txt_relationssurname" tabindex="20" size="45" />
+</div>
+</th>
+<td class="style3">&nbsp;</td></tr>
+</table>
+<span class="style3">Relationship</span><br>
+<select name="dd_relationship" id="dd_relationship" tabindex="21">
+		<option value="0">Select Relationship</option>
+		<option value="Father">Father</option>
+		<option value="Mother">Mother</option>
+		<option value="Husband">Husband</option>
+		<option value="Others">Others</option>
+
+	</select>
+<span id="RequiredFieldValidator14" style="color:Red;visibility:hidden;">*</span>
+</td>
+</tr>
+<tr>
+<th colspan="2" scope="row">
+<div align="left" class="style2">
+II. Particulars of place of ordinary residence (Full Address) </div> </th>
+ </tr>
+<tr><th scope="row"><div align="left" class="style2">
+House / Door Number <span class="style8" style="color: red">*</span></div>
+ </th>
+<td class="style16">
+ <table width="200" style="height: 34px">
+<tr>
+ <th class="style3">
+New No. &nbsp;<input name="txt_Newdoorno" type="text" maxlength="12" id="txt_Newdoorno" tabindex="25" /></th>
+<td class="style3">
+Old No. <input name="txt_olddoorno" type="text" maxlength="12" id="txt_olddoorno" tabindex="26" />
+</td>
+<td class="style3">
+<span id="Label1" style="display:inline-block;width:350px;">Enter NA if you do not have Old House Number</span>
+<br />
+Enter &quot; - &quot; instead of &quot; / &quot;</td>
+</tr>
+</table>
+</td>
+ </tr>
+ <tr>
+<th scope="row">
+                                <div align="left" class="style2">
+                                    Flat Name/ Building Name </div>
+                            </th>
+                            <td class="style16">
+                                <input name="txt_bldgname" type="text" maxlength="30" id="txt_bldgname" tabindex="27" size="40" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div align="left" class="style2">
+                                    Street/Area/Locality/Mohalla/Road<span 
+             class="style8" style="color:red"> *</span></div>
+                            </th>
+                            <td class="style16">
+                                <input name="txt_street" type="text" maxlength="30" id="txt_street" tabindex="28" size="40" />
+                                <span id="RequiredFieldValidator16" style="color:Red;visibility:hidden;">*</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div align="left" class="style2">
+                                    Town / Village <span class="style8" 
+             style="color:red">*</span></div>
+                            </th>
+                            <td class="style16">
+                                <input name="txt_town" type="text" id="txt_town" tabindex="29" size="40" />
+                                <span id="RequiredFieldValidator17" style="color:Red;visibility:hidden;">*</span>
+                            </td>
+                        </tr>
+                       
+                        <tr>
+                            <th scope="row">
+                                <div align="left" class="style2">
+                               <b>Post Office Pincode</b>  <span class="style8" style="color: red">*</span></div>
+                            </th>
+                             
+                            <td class="style16">
+                                
+                                <table width="200">
+                                    <tr>
+                                        <th class="style3" scope="row" style="height: 26px">
+                                            </th>
+                                        <td style="height: 26px">
+                                            <input name="txt_pincode" type="text" maxlength="6" id="txt_pincode" tabindex="34" size="10" style="width:103px;" />
+                                            <span id="rv_pincode" style="display:inline-block;color:Red;width:176px;display:none;">Invalid Pincode Number</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div align="left" class="style2">
+                                    <b>Tehsil/Taluka/Mandal/Thana :</b> &nbsp;<span class="style8" style="color:red">*</span></div>
+                            </th>
+                            <td class="style16">
+                                <!-- <input name="taluk" type="text" id="taluk" size="40" maxlength="30" tabindex="24"/> -->
+                                <div id="taluk1" >
+                                    <input name="txt_taluk" type="text" id="txt_taluk" tabindex="35" />
+                                    
+                                   <span id="RequiredFieldValidator25" style="color:Red;visibility:hidden;">*</span>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">
+                                <div align="left" class="style2">
+                                   <b> Telephone</b><span 
+             class="style8" style="color: red">*</span></div>
+                            </th>
+                            <td class="style16">
+                                <table width="200" border="0" style="height: 54px">
+                                    <tr>
+                                        <th class="style3">
+                                            STD CODE</th>
+                                        <td>
+                                            <input name="txt_stdcode" type="text" maxlength="6" id="txt_stdcode" tabindex="37" size="10" />
+                                            <span id="RegularExpressionValidator2" style="display:inline-block;color:Red;width:176px;display:none;">Invalid STD CODE Number</span>
+                                        </td>
+                                        <td class="style3">
+                                            Land Line Number
+                                        </td>
+                                        <td>
+                                            <input name="txt_telephone" type="text" maxlength="8" id="txt_telephone" tabindex="38" size="9" />
+                                            <span id="RegularExpressionValidator1" style="display:inline-block;color:Red;width:176px;display:none;">Invalid Land Line Number</span>
+                                        </td>
+                                        <td class="style3">
+                                            Mobile Number</td>
+                                        <td>
+                                            <input name="txt_mobileno" type="text" maxlength="10" id="txt_mobileno" tabindex="39" size="11" style="height: 22px" />
+                                            <span id="rv_mobileno" style="display:inline-block;color:Red;width:176px;display:none;">Invalid Mobile Number</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div align="left" class="style2">
+                                    E-Mail<span class="style8" style="color:red">*</span></div>
+                            </th>
+                            <td class="style16">
+                                <input name="txt_email" type="text" maxlength="50" id="txt_email" tabindex="40" size="50" />
+                                <span id="RequiredFieldValidator20" style="color:Red;visibility:hidden;">*</span>
+                                <span id="reqAuthEmail" style="color:Red;visibility:hidden;">Valid Email Address required</span>
+                            </td>
+                        </tr>
+                     
+                        <tr>
+                            <th colspan="2" scope="row">
+                                <table width="938" align="left">
+                                    <tr>
+                                        <th width="928" scope="row">
+                                            <div align="left" class="style2">
+                                                <div align="left">
+                                                    IV. Declaration 
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="style20">
+                                            <p align="left" class="style6">
+                                                <span class="style19"><span class="style23">a)</span></span><span 
+                      class="style23"><span class="style18"> I here by declare that to the best of my knowledge and belief: -</span><br 
+                      class="style18" />
+                                                <span class="style18">i) I am a citizen of India;
+                                                </span>
+                                                <br class="style18" />
+                                                </span><span class="style18"><span class="style23">ii) I am ordinarily resident 
+                                                at the address given in para II above since </span><span class="style11"><span class="style22"><span class="style23">
+                                                <span class="style24">
+                                                <select name="dd_residentday" id="dd_residentday" tabindex="53" name="residentday">
+		<option selected="selected" value="00">Select Day</option>
+		<option value="01">1</option>
+		<option value="02">2</option>
+		<option value="03">3</option>
+		<option value="04">4</option>
+		<option value="05">5</option>
+		<option value="06">6</option>
+		<option value="07">7</option>
+		<option value="08">8</option>
+		<option value="09">9</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+		<option value="13">13</option>
+		<option value="14">14</option>
+		<option value="15">15</option>
+		<option value="16">16</option>
+		<option value="17">17</option>
+		<option value="18">18</option>
+		<option value="19">19</option>
+		<option value="20">20</option>
+		<option value="21">21</option>
+		<option value="22">22</option>
+		<option value="23">23</option>
+		<option value="24">24</option>
+		<option value="25">25</option>
+		<option value="26">26</option>
+		<option value="27">27</option>
+		<option value="28">28</option>
+		<option value="29">29</option>
+		<option value="30">30</option>
+		<option value="31">31</option>
+
+	</select>
+                                                <select name="dd_residentmon" id="dd_residentmon" tabindex="54">
+		<option value="00">Select Month</option>
+		<option value="01">Jan</option>
+		<option value="02">Feb</option>
+		<option value="03">Mar</option>
+		<option value="04">Apr</option>
+		<option value="05">May</option>
+		<option value="06">June</option>
+		<option value="07">July</option>
+		<option value="08">Aug</option>
+		<option value="09">Sep</option>
+		<option value="10">Oct</option>
+		<option value="11">Nov</option>
+		<option value="12">Dec</option>
+
+	</select>
+                                                <select name="dd_residentyear" id="dd_residentyear" tabindex="55" name="residentyear">
+		<option value="0000">Select Year</option>
+		<option value="2013">2014</option>
+		<option value="2013">2013</option>
+		<option value="2012">2012</option>
+		<option value="2011">2011</option>
+		<option value="2010">2010</option>
+		<option value="2009">2009</option>
+		<option value="2008">2008</option>
+		<option value="2007">2007</option>
+		<option value="2006">2006</option>
+		<option value="2005">2005</option>
+		<option value="2004">2004</option>
+		<option value="2003">2003</option>
+		<option value="2002">2002</option>
+		<option value="2001">2001</option>
+		<option value="2000">2000</option>
+		<option value="1999">1999</option>
+		<option value="1998">1998</option>
+		<option value="1997">1997</option>
+		<option value="1996">1996</option>
+		<option value="1995">1995</option>
+		<option value="1994">1994</option>
+		<option value="1993">1993</option>
+		<option value="1992">1992</option>
+		<option value="1991">1991</option>
+		<option value="1990">1990</option>
+		<option value="1989">1989</option>
+		<option value="1988">1988</option>
+		<option value="1987">1987</option>
+		<option value="1986">1986</option>
+		<option value="1985">1985</option>
+		<option value="1984">1984</option>
+		<option value="1983">1983</option>
+		<option value="1982">1982</option>
+		<option value="1981">1981</option>
+		<option value="1980">1980</option>
+		<option value="1979">1979</option>
+		<option value="1978">1978</option>
+		<option value="1977">1977</option>
+		<option value="1976">1976</option>
+		<option value="1975">1975</option>
+		<option value="1974">1974</option>
+		<option value="1973">1973</option>
+		<option value="1972">1972</option>
+		<option value="1971">1971</option>
+		<option value="1970">1970</option>
+		<option value="1969">1969</option>
+		<option value="1968">1968</option>
+		<option value="1967">1967</option>
+		<option value="1966">1966</option>
+		<option value="1965">1965</option>
+		<option value="1964">1964</option>
+		<option value="1963">1963</option>
+		<option value="1962">1962</option>
+		<option value="1961">1961</option>
+		<option value="1960">1960</option>
+		<option value="1959">1959</option>
+		<option value="1958">1958</option>
+		<option value="1957">1957</option>
+		<option value="1956">1956</option>
+		<option value="1955">1955</option>
+		<option value="1954">1954</option>
+		<option value="1953">1953</option>
+		<option value="1952">1952</option>
+		<option value="1951">1951</option>
+		<option value="1950">1950</option>
+		<option value="1949">1949</option>
+		<option value="1948">1948</option>
+		<option value="1947">1947</option>
+		<option value="1946">1946</option>
+		<option value="1945">1945</option>
+		<option value="1944">1944</option>
+		<option value="1943">1943</option>
+		<option value="1942">1942</option>
+		<option value="1941">1941</option>
+		<option value="1940">1940</option>
+		<option value="1939">1939</option>
+		<option value="1938">1938</option>
+		<option value="1937">1937</option>
+		<option value="1936">1936</option>
+		<option value="1935">1935</option>
+		<option value="1934">1934</option>
+		<option value="1933">1933</option>
+		<option value="1932">1932</option>
+		<option value="1931">1931</option>
+		<option value="1930">1930</option>
+		<option value="1929">1929</option>
+		<option value="1928">1928</option>
+		<option value="1927">1927</option>
+		<option value="1926">1926</option>
+		<option value="1925">1925</option>
+		<option value="1924">1924</option>
+		<option value="1923">1923</option>
+		<option value="1922">1922</option>
+		<option value="1921">1921</option>
+		<option value="1920">1920</option>
+		<option value="1919">1919</option>
+		<option value="1918">1918</option>
+		<option value="1917">1917</option>
+		<option value="1916">1916</option>
+		<option value="1915">1915</option>
+		<option value="1914">1914</option>
+		<option value="1913">1913</option>
+		<option value="1912">1912</option>
+		<option value="1911">1911</option>
+		<option value="1910">1910</option>
+		<option value="1909">1909</option>
+		<option value="1908">1908</option>
+		<option value="1907">1907</option>
+		<option value="1906">1906</option>
+		<option value="1905">1905</option>
+		<option value="1904">1904</option>
+		<option value="1903">1903</option>
+		<option value="1902">1902</option>
+		<option value="1901">1901</option>
+		<option value="1900">1900</option>
+
+	</select>
+                                                </span></span></span></span></span>
+                                                <br class="style18" />
+                                                <span class="style18">iii) I have not applied for the inclusion of my name in 
+                                                the electoral roll for any other constituency;</span><br 
+                      class="style18" />
+                                                <span class="style18">iv) My name has not already been included in the electoral 
+                                                roll for this or any other assembly constituency</span>
+                                            </p>
+                                        </th>
+                                    </tr>
+<tr>
+                                        <th width="928" scope="row">
+                                            <div align="left" class="style2">
+                                                <div align="center">
+                                                    <input type="submit" name="btn_submit0" value="Submit" id="btn_submit0" tabindex="63" />
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                                         
+           </table>	
+          
+</table>
+</div>
+</form>
+</body>
+</html>

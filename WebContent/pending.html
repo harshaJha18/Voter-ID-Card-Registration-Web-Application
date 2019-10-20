@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Status Checking By Admin</title>
+</head>
+<body>
+<form name="pending" action="pending" method="post" onSubmit="return checkform(this)">
+<div align="center" style="vertical-align:bottom">
+<img src="C:\Users\Devil\Documents\Eclipse\VoterId\Images\vote.jpg" width="1350" height="200" >
+   <table cellspacing="0" cellpadding="4" border="0"  style="color:#0000FF;border-collapse:collapse;" width="1260" align="right">
+<tr style="color:White;background-color:#003399;font-weight:bold;">
+<th scope="col" align="left"><a href = "http://localhost:8080/VoterId/website.html"><font color="white">Home</font></a></th>
+<th scope="col" align="right"><a href = "http://localhost:8080/VoterId/homepage.html"><font color="white">Logout</font></a></th>
+</tr>
+</table>
+
+<br>
+<br>
+<br>
+<br>
+Status:<select name="status$dropbox" onchange="javascript:setTimeout('__doPostBack(\'ddlDist\',\'\')', 0)" id="status_dropBox" tabindex="1">
+		<option value="Pending">Pending</option>
+		<option value="Approved">Approved</option>
+		<option selected="selected" value="0">Choose Status</option></select> <br>  <br> 
+		 <br> 
+<input type="submit" name="Status$submit" value="Submit"  id="Status_submit" tabindex="4" />
+
+</div>
+</form>
+</body>
+</html>
